@@ -22,8 +22,6 @@ next.js와 typescript 언어를 배운 후 적용하고 싶어서 Spotify 사이
 - 기술적 이슈와 해결 과정
 - 프로젝트 팀원
 
-필요한 기술 스택에 대한 logo는 [skills 폴더](/skills/)에서 다운로드 받을 수 있습니다.
-
 <br />
 
 ## 화면 구성
