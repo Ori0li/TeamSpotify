@@ -1,8 +1,6 @@
 "use client";
 
-import { Album } from "@/common/Type/type";
 import React, { useRef, useState, useEffect } from "react";
-import { BiSolidPlaylist } from "react-icons/bi";
 import { FaPauseCircle } from "react-icons/fa";
 import { FaCirclePlay } from "react-icons/fa6";
 import {
@@ -95,12 +93,6 @@ const AudioTrack = ({ track }: AudioTrackProps) => {
       const newTime = (clickedPosition / progressBar.offsetWidth) * duration;
       audioRef.current.currentTime = newTime;
     }
-  };
-
-  const buttonCss = {
-    normal:
-      "text-xl text-white bg-blue-500 p-2 rounded-full hover:bg-blue-600 focus:outline-none",
-    big: "text-5xl text-white bg-blue-500 p-2 rounded-full hover:bg-blue-600 focus:outline-none",
   };
 
   useEffect(() => {
