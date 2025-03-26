@@ -47,11 +47,11 @@ export type SongProps = {
 };
 
 export type DetailProps = {
-  params: { artistName: string };
+  params: Promise<{ artistName: string }>;
 };
 
 export type TrackProps = {
-  params: { trackName: string };
+  params: Promise<{ trackName: string }>;
 };
 
 export type InputFieldProps = {
