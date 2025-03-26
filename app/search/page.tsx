@@ -1,10 +1,13 @@
 import SearchList from "@/components/search/SeachList";
+import { Suspense } from "react";
+
+export const dynamic = "force-dynamic"; // 💥 핵심!
 
 const SearchPage = () => {
   return (
-    <div>
+    <Suspense fallback={<p className="text-white">로딩 중...</p>}>
       <SearchList />
-    </div>
+    </Suspense>
   );
 };
 
