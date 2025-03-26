@@ -43,7 +43,7 @@ export type SongProps = {
   image?: string;
   duration: string;
   number: number;
-  onClick: () => void;
+  onClick?: () => void;
 };
 
 export type DetailProps = {
