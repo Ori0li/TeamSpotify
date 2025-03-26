@@ -3,7 +3,6 @@
 import DeleteButton from "@/components/admin/DeleteButton";
 import GetDataBoxTag from "@/components/admin/GetDataBox";
 import SetDataBoxTag from "@/components/admin/SetDataBox";
-import { useState } from "react";
 
 const AdminPage = () => {
   return (

@@ -62,7 +62,7 @@ const SearchPage = () => {
   return (
     <div className="p-8 text-white">
       <h2 className="text-2xl font-bold mb-6">
-        Search Results for: "{rawQuery}"
+        {`Search Results for: "${rawQuery}"`}
       </h2>
 
       {albums.length === 0 ? (

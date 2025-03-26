@@ -1,7 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { doc, getDoc, updateDoc, deleteField } from "firebase/firestore";
+import {
+  doc,
+  getDoc,
+  updateDoc,
+  deleteField,
+  FieldValue,
+} from "firebase/firestore";
 import fireStore from "@/firebase/firestore";
 
 const DeleteButton = () => {
@@ -27,7 +33,7 @@ const DeleteButton = () => {
 
       // 앨범 문서의 모든 필드를 삭제
       const albumData = albumDoc.data();
-      const updates: { [key: string]: any } = {};
+      const updates: Record<string, FieldValue> = {};
 
       // 문서의 모든 필드에 대해 deleteField() 적용
       Object.keys(albumData).forEach((key) => {
